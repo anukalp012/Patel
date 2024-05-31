@@ -1,0 +1,30 @@
+const NFTs= []
+
+function mintNFT (Name,Job,City) {
+const NFT = {
+    "name": Name,
+    "job":Job,
+    "city":City
+}    
+NFTs.push(NFT);
+console.log("Minted: "+Name);
+
+}
+
+function listNFTs () {
+    for(let i= 0; i<NFTs.length; i++){
+        console.log(NFTs[i]);
+    }
+
+}
+
+function getTotalSupply() {
+    console.log(NFTs.length);
+
+}
+
+
+mintNFT("Anukalp","developer","India");
+mintNFT("Aditya","developer","India");
+listNFTs();
+getTotalSupply();
